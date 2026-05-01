@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TabSense Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4f7fb;
+        --panel: #ffffff;
+        --text: #162033;
+        --muted: #5b667a;
+        --line: #d9e1ec;
+        --accent: #2f6fed;
+        --accent-soft: #eaf1ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background:
+          radial-gradient(circle at top right, #dce8ff 0, transparent 30%),
+          linear-gradient(180deg, #f7faff 0%, var(--bg) 100%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 48px 20px 72px;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 18px 48px rgba(22, 32, 51, 0.08);
+      }
+
+      h1,
+      h2 {
+        line-height: 1.2;
+        margin: 0 0 16px;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        letter-spacing: -0.03em;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+        margin-top: 32px;
+      }
+
+      p,
+      li {
+        font-size: 1rem;
+        color: var(--text);
+      }
+
+      .lede {
+        font-size: 1.1rem;
+        color: var(--muted);
+        max-width: 60ch;
+      }
+
+      .meta {
+        display: inline-block;
+        margin: 0 0 20px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      ul {
+        margin: 12px 0 0;
+        padding-left: 20px;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .note {
+        margin-top: 24px;
+        padding: 16px 18px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: #fbfcfe;
+        color: var(--muted);
+      }
+
+      @media (max-width: 640px) {
+        main {
+          padding: 24px 14px 40px;
+        }
+
+        .card {
+          padding: 22px 18px;
+          border-radius: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <p class="meta">Last updated: May 2, 2026</p>
+        <h1>TabSense Privacy Policy</h1>
+        <p class="lede">
+          TabSense is a local-first browser extension designed to help users remember pages,
+          recover browsing context, and restore recent sessions. This Privacy Policy explains
+          what data TabSense handles, how it is used, and what controls users have.
+        </p>
+
+        <h2>What TabSense collects</h2>
+        <p>When enabled, TabSense may collect and store the following information from standard <code>http</code> and <code>https</code> pages that a user visits:</p>
+        <ul>
+          <li>Page URL</li>
+          <li>Page title</li>
+          <li>A short text snippet extracted from page content</li>
+          <li>Visit timestamps and revisit counts</li>
+          <li>Active tab dwell time and focus-session information</li>
+          <li>Open tab and window state needed to create session snapshots for restore</li>
+          <li>User settings such as tracking status, retention period, excluded domains, and incognito capture preference</li>
+        </ul>
+
+        <h2>How TabSense uses this data</h2>
+        <p>TabSense uses this information only to provide its user-facing features, including:</p>
+        <ul>
+          <li>Searching for previously visited pages using remembered titles, URLs, and text snippets</li>
+          <li>Highlighting important pages based on revisit frequency and time spent</li>
+          <li>Restoring recent tab and window sessions</li>
+          <li>Detecting duplicate tabs for manual cleanup</li>
+          <li>Applying user-configured retention and exclusion rules</li>
+        </ul>
+
+        <h2>Where data is stored</h2>
+        <p>
+          TabSense stores its data locally on the user&apos;s device using browser-provided local
+          storage and IndexedDB. The extension is designed to work without sending captured browsing
+          data to the developer&apos;s servers.
+        </p>
+
+        <h2>Data sharing and sale</h2>
+        <p>
+          TabSense does not sell personal data. TabSense does not share collected browsing data with
+          third parties. The extension is designed to operate locally on-device.
+        </p>
+
+        <h2>Incognito and sensitive sites</h2>
+        <p>
+          Incognito capture is disabled by default. TabSense also supports excluded domains so users
+          can prevent capture on specific sites. Default exclusions include some account and payment
+          domains, and users can add or remove exclusions in the extension settings.
+        </p>
+
+        <h2>Data retention</h2>
+        <p>
+          Stored page memory and session snapshots are automatically pruned based on the extension&apos;s
+          retention settings. The default retention period is 90 days, and users can change this in
+          the options page.
+        </p>
+
+        <h2>User controls</h2>
+        <p>Users can control TabSense behavior from the extension&apos;s settings, including:</p>
+        <ul>
+          <li>Turning tracking on or off</li>
+          <li>Choosing whether incognito browsing may be captured</li>
+          <li>Configuring excluded domains</li>
+          <li>Changing the retention period</li>
+          <li>Clearing all locally stored TabSense data</li>
+        </ul>
+
+        <h2>Children&apos;s privacy</h2>
+        <p>
+          TabSense is not directed to children and is not intended for use by children under 13.
+        </p>
+
+        <h2>Changes to this policy</h2>
+        <p>
+          This Privacy Policy may be updated from time to time to reflect product changes, legal
+          requirements, or clarifications to our practices. The updated version will be posted at
+          this page with a revised &quot;Last updated&quot; date.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          For privacy questions about TabSense, users should contact the publisher through the
+          support contact or website listed on the extension&apos;s Chrome Web Store page.
+        </p>
+
+        <p class="note">
+          Note: If TabSense later adds sync, analytics, cloud storage, AI processing, or any other
+          remote service, this policy should be updated before those features are released.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
